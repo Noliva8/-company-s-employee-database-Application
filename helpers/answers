@@ -1,0 +1,25 @@
+// Import the questions
+// -------------------------------------------------------
+const {
+    mainQuestions,
+    addDepartmentQuestions,
+    addRoleQuestions,
+    addEmployeeQuestions,
+    addEmployeeRole
+} = require ('./questions');
+
+// ---------------------------------------------------------
+
+inquirer
+  .prompt ( mainQuestions)
+  .then((answers) => {
+    if(answers.employees === "Add Employee"){
+       inquirer
+       .prompt (addEmployeeQuestions) 
+    };
+
+    if(answers.employees  === "View all employees"){
+        
+
+    }
+  })
