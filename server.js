@@ -45,15 +45,24 @@ inquirer
   .prompt(mainQuestions)
   .then((answers) => {
     if (answers.employees === "View all departments") {
-      const viewAllDepartments = 'SELECT departments.id AS id, departments.name AS name FROM departments;';
+      const viewAllDepartments = 'SELECT departments.department_id AS id, departments.name AS name FROM departments;';
 
       pool.query(viewAllDepartments, function (err, {rows}){
         console.table(rows);
         askQuestion();
       });
     }
-    if (answers.employees ==="View all employees"){
-      
+    if (answers.employees === "View all roles") {
+      const viewAllRoles = 'SELECT roles.id AS RoleID, roles.title AS Titles, departments.name AS Department, salaries.salary AS Salary FROM roles JOIN departments ON roles.department_id = departments.department_id JOIN salaries ON roles.salary_id = salaries.salary_id;';
+      pool.query(viewAllRoles, (err, {rows})=>{
+        console.table(rows);
+        askQuestion();
+      })
+
+
+
+
+
     }
   })
   
