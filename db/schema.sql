@@ -29,21 +29,10 @@ id SERIAL PRIMARY KEY,
 title VARCHAR(250) NOT NULL,
 department_id INTEGER,
 salary_id INTEGER,
-FOREIGN KEY (department_id) REFERENCES departments (department_id),
-FOREIGN KEY (salary_id) REFERENCES salaries (salary_id)
+FOREIGN KEY (department_id) REFERENCES departments (id),
+FOREIGN KEY (salary_id) REFERENCES salaries (id)
 
 );
 
-SELECT 
-    roles.id,
-    roles.title,
-    departments.name AS department,
-    salaries.salary
-FROM 
-    roles
-JOIN 
-    departments ON roles.department_id = departments.department_id
-JOIN 
-    salaries ON roles.salary_id = salaries.salary_id;
 
 

@@ -1,25 +1,26 @@
 // Import the questions
 // -------------------------------------------------------
-const {
-    mainQuestions,
-    addDepartmentQuestions,
-    addRoleQuestions,
-    addEmployeeQuestions,
-    addEmployeeRole
-} = require ('./questions');
+// const {
+//     mainQuestions,
+//     addDepartmentQuestions,
+//     addRoleQuestions,
+//     addEmployeeQuestions,
+//     addEmployeeRole
+// } = require ('./helpers/questions');
 
-// ---------------------------------------------------------
+// // ---------------------------------------------------------
 
-inquirer
-  .prompt ( mainQuestions)
-  .then((answers) => {
-    if(answers.employees === "Add Employee"){
-       inquirer
-       .prompt (addEmployeeQuestions) 
-    };
+// inquirer
+//   .prompt ( mainQuestions)
+//   .then((answers) => {
+//     if(answers.employees === "View all departments"){
+//        SELECT *
+//        FROM departments
+//     };
 
-    if(answers.employees  === "View all employees"){
+//     if(answers.employees  === "View all employees"){
+
         
 
-    }
-  })
+//     }
+//   })
