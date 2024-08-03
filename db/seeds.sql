@@ -6,6 +6,7 @@ VALUES
 ('Finance'),
 ('Legal'),
 ('Sales');
+('Services');
 
 -- Retrieve department IDs
 SELECT * FROM departments;

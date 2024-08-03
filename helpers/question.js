@@ -76,14 +76,14 @@ const addRoleQuestions = [
 
   {
         type:"list",
-        name: "departments",
+        name: "department",
         message:" Which department does the role belong to?",
         choices : [
-        "Engineering",
-         "Finance", 
-         "Legal", 
-         "Sales", 
-         "Services"
+        'Engineering',
+         'Finance', 
+         'Legal', 
+         'Sales', 
+         'Service'
          
           ]
     },
@@ -131,7 +131,7 @@ const addRoleQuestions = [
             "Accountant",
             "Legal Team Lead",
             "Lawyer",
-            "Customer Service"
+            "customer services"
         ]
     },
 
