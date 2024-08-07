@@ -45,7 +45,7 @@ CREATE TABLE managers (
 CREATE TABLE employees (
     employee_id SERIAL PRIMARY KEY,
     firstName VARCHAR(50),
-    LastName VARCHAR(50),
+    lastName VARCHAR(50),
     role_id INTEGER,
     department_id INTEGER,
     salary_id INTEGER,

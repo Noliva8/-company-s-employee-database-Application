@@ -54,7 +54,7 @@ SELECT * FROM managers;
 -- ------------------------------------------------
 -- BASE DATA FOR EMPLOYEES
 -- ---------------------------------
-INSERT INTO employees (firstName, LastName, role_id, department_id, salary_id, manager_id)
+INSERT INTO employees (firstName, lastName, role_id, department_id, salary_id, manager_id)
 VALUES 
 ('John', 'Doe', 1, 4, 1, NULL),     
 ('Mike', 'Chan', 2, 4, 2, 1),       
