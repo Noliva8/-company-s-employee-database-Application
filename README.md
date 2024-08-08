@@ -19,6 +19,11 @@ Clone the Repository: Download the project files to your local machine.
 ## Usage
 Install Dependencies: Use npm to install the required packages (Express, Inquirer, Postgres, dotenv). Set Up Environment Variables: Create a .env file with your database connection details.
 
+See the walkthrough video link:
+https://www.youtube.com/watch?v=QkL6zhJhcY4
+
+
+
 ## License
 
 This project is licensed under the MIT license.
